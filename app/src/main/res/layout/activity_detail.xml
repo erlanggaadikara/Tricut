@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.myapplication.detel">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/NAMA_SALON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView10"
+        android:layout_marginTop="11dp"
+        android:text="Nama Salon"
+        android:textColor="@android:color/black"
+        android:textSize="25sp" />
+    <!--<TextView-->
+        <!--android:id="@+id/textView2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/NO_TELP"-->
+        <!--android:layout_alignLeft="@+id/DESKRIPSI"-->
+        <!--android:layout_alignStart="@+id/DESKRIPSI"-->
+        <!--android:text="NO TELP" />-->
+
+    <TextView
+        android:id="@+id/NO_TELP"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/harga_w"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="085101419371"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/BUKA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/NO_TELP"
+        android:text="Buka: "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/buka_w"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/BUKA"
+        android:layout_alignBottom="@+id/BUKA"
+        android:layout_toEndOf="@+id/BUKA"
+        android:layout_toRightOf="@+id/BUKA"
+        android:hint="buka"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/Harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/DESKRIPSI"
+        android:layout_alignRight="@+id/DESKRIPSI"
+        android:layout_below="@+id/NAMA_SALON"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:text="Harga mulai dari"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/harga_w"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Harga"
+        android:layout_alignStart="@+id/Harga"
+        android:layout_below="@+id/Harga"
+        android:hint="harga"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/DESKRIPSI"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/BUKA"
+        android:layout_marginTop="12dp"
+        android:hint="Deskripsi"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ALAMAT"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="ALAMAT" />
+
+    <TextView
+        android:id="@+id/ALAMAT"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_above="@+id/map"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:text="ALAMAT"
+        android:textColor="@android:color/black" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:context=".MapsActivity" />
+</RelativeLayout>

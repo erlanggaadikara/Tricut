@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <ImageButton
+              android:id="@+id/imageButton4"
+              android:layout_width="330dp"
+              android:layout_height="145dp"
+              android:layout_alignParentTop="true"
+              android:layout_centerHorizontal="true"
+              android:layout_weight="0.13"
+              app:srcCompat="@android:color/darker_gray"
+              tools:layout_editor_absoluteX="3dp"
+              tools:layout_editor_absoluteY="202dp"></ImageButton>
+
+          <TextView
+              android:id="@+id/namaSalon"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBottom="@+id/imageButton4"
+              android:layout_alignLeft="@+id/imageButton4"
+              android:layout_alignStart="@+id/imageButton4"
+              android:layout_marginBottom="21dp"
+              android:layout_marginLeft="27dp"
+              android:layout_marginStart="27dp"
+              android:background="@android:color/transparent"
+              android:padding="2dp"
+              android:shadowColor="@android:color/black"
+              android:shadowDx="0"
+              android:shadowDy="0"
+              android:shadowRadius="8"
+              android:text="NAMA SALON"
+              android:textColor="@android:color/white"
+              android:textSize="18sp" />
+
+      </RelativeLayout>
+</android.support.v7.widget.CardView>

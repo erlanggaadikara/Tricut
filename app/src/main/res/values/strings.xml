@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tricut</string>
+    <string name="rb_pusat">SUARABAYA PUSAT</string>
+    <string name="rb_utara">SURABAYA UTARA</string>
+    <string name="rb_selatan">SURABAYA SELATAN</string>
+    <string name="rb_timur">SURABAYA TIMUR</string>
+    <string name="rb_barat">SURABAYA BARAT</string>
+    <string name="jawab">SUBMIT</string>
+    <string name="pilihkec">Pilih Kecamatan Anda : ?</string>
+    <string name="arrow_left"></string>
+</resources>

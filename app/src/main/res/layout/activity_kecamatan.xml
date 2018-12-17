@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.myapplication.MainActivity">
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pilihkec"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="33dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupNb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="72dp">
+
+        <RadioButton
+            android:id="@+id/rbpusat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rb_pusat"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="83dp" />
+
+        <RadioButton
+            android:id="@+id/rbutara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rb_utara"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="83dp" />
+
+        <RadioButton
+            android:id="@+id/rbselatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rb_selatan"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="139dp" />
+
+        <RadioButton
+            android:id="@+id/rbtimur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rb_timur"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="83dp" />
+
+        <RadioButton
+            android:id="@+id/rbbarat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rb_barat"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="139dp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bt_jawab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jawab"
+        android:layout_below="@+id/radioGroupNb"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="503dp" />
+
+</android.support.constraint.ConstraintLayout>
